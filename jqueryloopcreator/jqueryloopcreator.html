@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="ColorCSS.css" rel="stylesheet" />
+    <script src="jquery-1.11.0.min.js"></script>
+    <title>Bailad Cuadrados!!!</title>
+    <script type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function () {
+            var contador = 0;
+         for (var y = 1; y <= 25; y++) {
+            
+            $('#contenedor').append('<p>');
+            
+            for(var x = 1; x <= 25; x++){
+             $('#contenedor').append('<div class="Rojo" id="' + contador + '"></div>');
+             contador++;
+            }
+
+            
+            $('#contenedor').append('</p>');
+         }
+     });
+    </script>
+
+</head>
+<body>
+    <div id="contenedor"></div>
+</body>
+</html>
